@@ -154,13 +154,13 @@ def F_View():
         print("YOU HAVE NOT PLACED ANY ORDER")
         d.commit()
     # CANCELING YOUR FOOD ORDER 
-    def F_Cancel():
-        cor=int(input("Enter your phone NO:"))
-        dele=("delete from orders where P_no={}").format(cor)
-        e.execute(dele)
-        print("Your order has been cancelled SUCCESSFULLY")
-        print("You have been Redirected to the MAIN PAGE")
-        d.commit()
+def F_Cancel():
+    cor=int(input("Enter your phone NO:"))
+    dele=("delete from orders where P_no={}").format(cor)
+    e.execute(dele)
+    print("Your order has been cancelled SUCCESSFULLY")
+    print("You have been Redirected to the MAIN PAGE")
+    d.commit()
  # FEEDBACK OPTION FOR CUSTOMER
 def F_feedb():
     fdb=int(input("Enter your Phone NO:"))
